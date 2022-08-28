@@ -1,0 +1,28 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        maven {
+            url "https://github.com/jitsi/jitsi-maven-repository/raw/master/releases"
+        }
+        google()
+        mavenCentral()
+
+        maven { url 'https://www.jitpack.io' }
+        jcenter()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        maven {
+            url "https://github.com/jitsi/jitsi-maven-repository/raw/master/releases"
+        }
+        google()
+        mavenCentral()
+
+        maven { url 'https://www.jitpack.io' }
+        jcenter()
+    }
+}
+rootProject.name = "Jitsi Video Call"
+include ':app'
